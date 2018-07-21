@@ -87,4 +87,6 @@
             <port>4005</port>
         </peer>
     </lookups>
+    <dummy>
+    </dummy>
 </node>
