@@ -63,6 +63,8 @@ endif(IS_LOOKUP_NODE)
 add_compile_options(-Wall)
 add_compile_options(-Werror)
 add_compile_options(-Wextra)
+add_compile_options(-fsanitize=thread)
+link_libraries(-fsanitize=thread)
 
 if (ENABLE_COVERAGE AND CMAKE_COMPILER_IS_GNUCXX)
     include(CodeCoverage)
