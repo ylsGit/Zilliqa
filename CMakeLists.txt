@@ -78,6 +78,10 @@ add_compile_options(-Wall)
 add_compile_options(-Werror)
 add_compile_options(-Wextra)
 
+add_compile_options(-fsanitize=address)
+add_compile_options(-fno-omit-frame-pointer)
+link_libraries(-fsanitize=address)
+
 if (ENABLE_COVERAGE AND CMAKE_COMPILER_IS_GNUCXX)
     if (NOT TESTS)
         message(FATAL_ERROR "TESTS is not ON")
