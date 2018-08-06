@@ -1,0 +1,15 @@
+# escape=\
+
+ARG COMMIT
+FROM zilliqa:${COMMIT}
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    dnsutils \
+    gdb \
+    less \
+    logrotate \
+    net-tools \
+    rsyslog \
+    vim \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install setuptools \
+    && pip install kubernetes
