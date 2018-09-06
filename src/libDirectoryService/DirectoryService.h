@@ -214,7 +214,7 @@ class DirectoryService : public Executable, public Broadcastable
                              uint64_t& nonce, array<unsigned char, 32>& rand1,
                              array<unsigned char, 32>& rand2,
                              unsigned int& difficulty, uint64_t& block_num,
-                             std::string&);                           
+                             std::string&);
     void CommitMBSubmissionMsgBuffer();
     bool ProcessMicroblockSubmissionCore(const vector<unsigned char>& message,
                                          unsigned int curr_offset);
