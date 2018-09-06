@@ -32,7 +32,7 @@ namespace eth
 class CUDAMiner: public Miner
 {
 public:
-	CUDAMiner();
+	CUDAMiner(size_t _index);
 	~CUDAMiner() override;
 
 	static unsigned instances()

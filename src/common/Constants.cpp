@@ -186,6 +186,7 @@ const bool USE_REMOTE_TXN_CREATOR{
     ReadTransactionDispatcher("USE_REMOTE_TXN_CREATOR") == "true" ? true
                                                                   : false};
 
+const unsigned int NUM_DEVICE_TO_USE{ReadGpuConstants("NUM_DEVICE_TO_USE")};
 const unsigned int OPENCL_LOCAL_WORK_SIZE{
     ReadGpuConstants("opencl.LOCAL_WORK_SIZE")};
 const unsigned int OPENCL_GLOBAL_WORK_SIZE_MULTIPLIER{
